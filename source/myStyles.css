@@ -16,7 +16,7 @@
 
 .miniplayer .pluggedTT {
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     right: 1em;
 }
 .pluggedTT .muteButton {
