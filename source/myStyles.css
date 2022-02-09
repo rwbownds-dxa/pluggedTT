@@ -1,3 +1,6 @@
+#pluggedTTModal {
+	background-color: rgba(100,100,200,0.1);	
+}
 .pluggedTT {
     position: absolute;
     z-index: 10;
