@@ -131,8 +131,8 @@ const runTurntableCode = async () => {
                 $(window).focus()
 
                 let thisTitle = currentSong.metadata.song
-		let thisArtist = currentsong.metadata.artist
-		let youTubeId = currentsong.metadata.ytid
+		let thisArtist = currentSong.metadata.artist
+		let youTubeId = currentSong.metadata.ytid
 		
 		let thisSong = thisTitle + "; " + thisArtist + "; https://www.youtube.com/watch?v=" + youTubeId
 		
