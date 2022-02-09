@@ -280,10 +280,10 @@ const runTurntableCode = async () => {
                     } else if (isSC) {
                         url = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${d.sourceid}`
                     }
-                    return `${d.metadata.song},${d.metadata.artist},${url}`
+                    return `${d.metadata.song};${d.metadata.artist};${url}`
                 }).join('\n')
             const headers = `song;artist;url\n`
-			alert('this code was activated')
+	    alert('this code was activated at line 286')
             const full = headers + data
             var pom = pluggedTTContainer.querySelector('.downloadPlaylist')
             pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(full));
