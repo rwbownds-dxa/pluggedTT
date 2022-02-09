@@ -282,6 +282,7 @@ const runTurntableCode = async () => {
                     }
                     return `${d.metadata.song};${d.metadata.artist};${url}`
                 }).join('\n')
+	    console.log(turntable.playlist.fileids)
             const headers = `song;artist;url\n`
 	    console.log('this code was activated at line 286')
             const full = headers + data
