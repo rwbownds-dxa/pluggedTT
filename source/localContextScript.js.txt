@@ -120,8 +120,8 @@ const runTurntableCode = async () => {
     if (turntable && turntable.socket) {
         log('add socket listener')
         turntable.socket.addEventListener('message', messageString => {
-	    console.log(messageString)
             const message = JSON.parse(messageString)
+	    console.log(message)
             if (message.room && message.room.metadata && message.room.metadata.current_song) {
                 currentSong = message.room.metadata.current_song
             }
