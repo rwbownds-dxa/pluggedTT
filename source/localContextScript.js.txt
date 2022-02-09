@@ -282,7 +282,7 @@ const runTurntableCode = async () => {
                     }
                     return `${d.metadata.song},${d.metadata.artist},${url}`
                 }).join('\n')
-            const headers = `song,artist,url\n`
+            const headers = `song;artist;url\n`
             const full = headers + data
             var pom = pluggedTTContainer.querySelector('.downloadPlaylist')
             pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(full));
