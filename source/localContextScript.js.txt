@@ -130,7 +130,7 @@ const runTurntableCode = async () => {
                 // get around anti idle stuff..
                 $(window).focus()
 
-                log(currentSong)
+                console.log(currentSong.metadata.song)
                 if (currentSong) {
                     const djid = currentSong.djid
                     const me = turntable.user.id
