@@ -374,7 +374,7 @@ const init = async () => {
     if (document.location.hostname.match(/turntable.fm/)) {
         const waitForTurntable = () => {
             if (turntable) {
-                runTurntableCode()
+                /* runTurntableCode() */
                 setTimeout(runTurntableCode, 3000)
             } else {
                 console.log('waiting')
